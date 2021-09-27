@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div class="login-page-wrapp d-flex">
+      <div class="login-form-wrap">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Login</a
+            >
+            <a
+              class="nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >Authentication</a
+            >
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <div class="form-card card">
+              <div class="card-body">
+                <h4 class="card-title">Please Login</h4>
+                <form name="loginForm">
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                      data-required="password"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+            <div class="form-card card">
+              <div class="card-body">
+                <h4 class="card-title">Authentication</h4>
+                <form name="authForm">
+                  <div class="form-group">
+                    <label for="email-auth">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email-auth"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                      data-required="email"
+                      data-invalid-message="Please provide valid email example@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password-auth">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password-auth"
+                      placeholder="Enter password"
+                      data-required="password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="nickname-auth">Nickname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nickname-auth"
+                      placeholder="Enter your nickname"
+                      data-required="nickname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="firs_tname-auth">Firstname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="first_name-auth"
+                      placeholder="Enter your firstname"
+                      data-required="first_name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="last_name-auth">Lastname</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="last_name-auth"
+                      placeholder="Enter your lastname"
+                      data-required="last_name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone-auth">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone-auth"
+                      placeholder="Enter your phone"
+                      data-required="phone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label
+                          class="input-group-text country-span-container"
+                          for="gender-auth"
+                        >
+                          <span>Gender</span>
+                        </label>
+                      </div>
+                      <select
+                        class="custom-select"
+                        id="gender-auth"
+                        data-required="gender_orientation"
+                      >
+                        <option selected>Choose your gender...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label
+                          class="input-group-text country-span-container"
+                          for="country-auth"
+                        >
+                          <span>Country</span>
+                        </label>
+                      </div>
+                      <select
+                        class="custom-select"
+                        id="country-auth"
+                        data-required="country"
+                      >
+                        <option selected>Choose your country...</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Litva">Litva</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="city-auth">
+                          City
+                        </label>
+                      </div>
+                      <select
+                        class="custom-select"
+                        id="city-auth"
+                        data-required="city"
+                        disabled
+                      >
+                        <option selected>Choose your city...</option>
+                        <option value="Moscow">Moscow</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Vilnius">Vilnius</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="birth-day">
+                          Day of birth
+                        </label>
+                      </div>
+                      <select
+                        class="custom-select"
+                        id="birth-day"
+                        data-required="date_of_birth_day"
+                      >
+                        <option selected>Choose your day of birth...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="birth-month">
+                          Month of birth
+                        </label>
+                      </div>
+                      <select
+                        class="custom-select"
+                        id="birth-month"
+                        data-required="date_of_birth_month"
+                      >
+                        <option selected>Choose your month of birth...</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span
+                          class="input-group-text"
+                          id="birth_year-auth-group"
+                          >Year of birth</span
+                        >
+                      </div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="birth-year"
+                        placeholder="Year of your birth"
+                        data-required="date_of_birth_year"
+                        aria-describedby="birth_year-auth-group"
+                        min="1900"
+                        max="2021"
+                      />
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- /.login-page-wrapp -->
+  </body>
+</html>
